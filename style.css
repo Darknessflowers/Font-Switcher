@@ -1,0 +1,106 @@
+:root {
+  --background: #222831;
+  --subtle: #feceab;
+  --secondary: #393e46;
+  --highlight: #a8df65;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  background: var(--background);
+  display: grid;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  color: #fff;
+}
+
+input + label::before {
+  content: ' \25B6';
+  color: var(--background);
+  font-size: 15px;
+  vertical-align: middle;
+  visibility: hidden;
+}
+
+input:checked + label::before {
+  content: ' \25B6';
+  color: var(--highlight);
+  font-size: 15px;
+  vertical-align: middle;
+  visibility: visible;
+}
+
+.fonts {
+  width: 600px;
+  max-width: 90%;
+  display: grid;
+  background: var(--secondary);
+  padding: 30px 35px 30px 50px;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+.fonts-container {
+  display: grid;
+  margin-left: -20px;
+}
+.fonts input {
+  display: none;
+  margin-right: 13px;
+}
+.fonts label {
+  margin-bottom: 19px;
+  font-size: 25px;
+  cursor: pointer;
+  /* margin-left: 20px; */
+}
+
+label.homemadeapple {
+  font-size: 20px;
+}
+label.caveat {
+  font-size: 30px;
+}
+h1 {
+  color: var(--highlight);
+  font-family: 'Lato', sans-serif;
+  font-weight: 800;
+}
+textarea {
+  font-family: sans-serif;
+  padding: 10px;
+  border: none;
+  resize: vertical;
+  background: #fcfcfc;
+  color: var(--background);
+}
+.amatic {
+  font-family: 'Amatic SC', cursive;
+}
+.caveat {
+  font-family: 'Caveat', cursive;
+}
+.handlee {
+  font-family: 'Handlee', cursive;
+}
+.homemadeapple {
+  font-family: 'Homemade Apple', cursive;
+}
+.indieflower {
+  font-family: 'Indie Flower', cursive;
+}
+.patrickhand {
+  font-family: 'Patrick Hand', cursive;
+}
+.preview {
+  font-size: 22px;
+}
+
+
+
+
+

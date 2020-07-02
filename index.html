@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Font Preview</title>
+  <link rel="stylesheet" href="style.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Caveat&family=Handlee&family=Homemade+Apple&family=Indie+Flower&family=Lato:wght@400;700;900&family=Patrick+Hand&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div class="fonts">
+
+    <h1>Preview a handwritten font</h1>
+    <div class="fonts-container">
+      <input type="radio" value="amatic" id="amatic" name="font" autocomplete="off">
+      <label for="amatic" class="amatic"> Amatic SC
+      </label>
+
+
+      <input type="radio" value="caveat" id="caveat" name="font" autocomplete="off">
+      <label for="caveat" class="caveat">Caveat</label>
+
+      <input type="radio" value="handlee" id="handlee" name="font" autocomplete="off">
+      <label for="handlee" class="handlee">
+        Handlee
+      </label>
+
+      <input type="radio" value="homemadeapple" id="homemadeapple" name="font" autocomplete="off">
+      <label for="homemadeapple" class="homemadeapple">
+        Homemade Apple
+      </label>
+
+      <input type="radio" value="indieflower" id="indieflower" name="font" autocomplete="off">
+      <label for="indieflower" class="indieflower">
+        Indie Flower
+      </label>
+
+      <input type="radio" value="patrickhand" id="patrickhand" name="font" autocomplete="off">
+      <label for="patrickhand" class="patrickhand">
+        Patrick Hand
+      </label>
+    </div>
+
+    <textarea name="text">Preview your text here.</textarea>
+    <p class="preview"></p>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
